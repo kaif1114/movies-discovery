@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# Movies Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Movies Discovery App is a web application built using React and Vite. It allows users to browse and discover movies across different genres, sort them using various sorting methods, and enjoy infinite scrolling. The app leverages the TMDB API for retrieving movie data and employs Chakra UI for a sleek user interface. React Query is used for data fetching and caching.
 
-Currently, two official plugins are available:
+## Features
+- Browse movies by different genres
+- Discover new movies with detailed information
+- Sort movies using various sorting methods
+- Infinite scrolling for seamless browsing experience
+- Modern user interface built with Chakra UI
+- Efficient data fetching and caching with React Query
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js and npm installed
+- TMDB API key (Get one from TMDB (https://www.themoviedb.org/documentation/api))
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
+   git clone https://github.com/yourusername/movies-discovery-app.git
+   cd movies-discovery-app
+  
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Install dependencies:**
+   npm install
+   
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Setup TMDB API Key:**
+   Add your API KEY in apiService file
+
+4. **Run the app:**
+   npm run dev
+
+## Usage
+1. Open the Movies Discovery App in your browser.
+2. Browse different genres and discover new movies.
+3. Use the sorting options to sort movies based on your preferences.
+4. Enjoy infinite scrolling for a smooth browsing experience.
+
+## Contributing
+Contributions are welcome! Please create a pull request or submit an issue if you have any suggestions or find any bugs.
+
+---
+
+Enjoy discovering movies!
